@@ -12,6 +12,7 @@ describe('or', function() {
     expect([true, true, true].reduce(or)).to.eql(true);
     expect([true, false, false].reduce(or)).to.eql(true);
     expect([false, false, false].reduce(or)).to.eql(false);
+    expect(["101", false, false].reduce(or)).to.eql(true);
     done();
   });
 });

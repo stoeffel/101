@@ -13,5 +13,5 @@
 module.exports = or;
 
 function or (a, b) {
-  return a || b;
+  return !!(a || b);
 }
